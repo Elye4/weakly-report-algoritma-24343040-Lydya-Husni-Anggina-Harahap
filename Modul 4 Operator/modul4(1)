@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int detik, menit, jam;
+    printf("Masukkan jumlah waktu dalam detik: ");
+    scanf("%i", &detik);
+
+    jam = detik/3600;
+    menit = (detik / 60) % 60;
+    detik = detik % 60;
+
+    printf(" %i jam,%i menit,%i detik", jam, menit, detik);
+
+    return 0;
+
+}
